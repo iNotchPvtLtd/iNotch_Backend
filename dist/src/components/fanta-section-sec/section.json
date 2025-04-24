@@ -1,0 +1,18 @@
+{
+    "collectionName": "components_fanta_section_sec_sections",
+    "info": {
+        "displayName": "section"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "content": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string"
+        }
+    }
+}

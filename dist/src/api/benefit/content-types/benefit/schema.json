@@ -1,0 +1,40 @@
+{
+    "kind": "singleType",
+    "collectionName": "benefits",
+    "info": {
+        "singularName": "benefit",
+        "pluralName": "benefits",
+        "displayName": "CocaColaBenefit",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "heading": {
+            "type": "string"
+        },
+        "text": {
+            "type": "string"
+        },
+        "imageRight": {
+            "type": "boolean"
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "item": {
+            "type": "component",
+            "repeatable": true,
+            "component": "elements.item"
+        }
+    }
+}

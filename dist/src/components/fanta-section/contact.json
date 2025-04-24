@@ -1,0 +1,24 @@
+{
+    "collectionName": "components_fanta_section_contacts",
+    "info": {
+        "displayName": "contact"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "subtitle": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "chattitle": {
+            "type": "string"
+        }
+    }
+}

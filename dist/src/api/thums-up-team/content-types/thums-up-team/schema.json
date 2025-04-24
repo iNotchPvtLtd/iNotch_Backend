@@ -1,0 +1,27 @@
+{
+    "kind": "singleType",
+    "collectionName": "thums_up_teams",
+    "info": {
+        "singularName": "thums-up-team",
+        "pluralName": "thums-up-teams",
+        "displayName": "ThumsUpTeam",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "teamMembers": {
+            "displayName": "teamList",
+            "type": "component",
+            "repeatable": true,
+            "component": "sections.team-list"
+        },
+        "title": {
+            "type": "string"
+        },
+        "subtitle": {
+            "type": "string"
+        }
+    }
+}

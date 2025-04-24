@@ -1,0 +1,25 @@
+{
+    "kind": "singleType",
+    "collectionName": "sprite_testimonials",
+    "info": {
+        "singularName": "sprite-testimonial",
+        "pluralName": "sprite-testimonials",
+        "displayName": "SpriteTestimonial"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "subtitle": {
+            "type": "string"
+        },
+        "testimonialList": {
+            "type": "component",
+            "repeatable": true,
+            "component": "sections.testimonial-list"
+        }
+    }
+}

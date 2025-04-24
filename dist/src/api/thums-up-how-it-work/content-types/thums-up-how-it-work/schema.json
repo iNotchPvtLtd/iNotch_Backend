@@ -1,0 +1,26 @@
+{
+    "kind": "singleType",
+    "collectionName": "thums_up_how_it_works",
+    "info": {
+        "singularName": "thums-up-how-it-work",
+        "pluralName": "thums-up-how-it-works",
+        "displayName": "ThumsUpHowItWork"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "subtitle": {
+            "type": "string"
+        },
+        "HowItWorksList": {
+            "displayName": "HowItWorksList",
+            "type": "component",
+            "repeatable": true,
+            "component": "sections.how-it-works-list"
+        }
+    }
+}

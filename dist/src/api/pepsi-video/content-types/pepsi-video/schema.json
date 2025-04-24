@@ -1,0 +1,17 @@
+{
+    "kind": "singleType",
+    "collectionName": "pepsi_videos",
+    "info": {
+        "singularName": "pepsi-video",
+        "pluralName": "pepsi-videos",
+        "displayName": "PepsiVideo"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "videoId": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "kind": "singleType",
+    "collectionName": "videos",
+    "info": {
+        "singularName": "video",
+        "pluralName": "videos",
+        "displayName": "CocaColaVideo",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "videoId": {
+            "type": "string"
+        }
+    }
+}

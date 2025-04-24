@@ -1,0 +1,29 @@
+{
+    "kind": "singleType",
+    "collectionName": "globals",
+    "info": {
+        "singularName": "global",
+        "pluralName": "globals",
+        "displayName": "CocaColaHeade",
+        "description": "Define global settings"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "description": {
+            "type": "text",
+            "required": true
+        },
+        "topnav": {
+            "type": "component",
+            "repeatable": false,
+            "component": "layout.top-nav"
+        }
+    }
+}

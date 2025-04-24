@@ -1,0 +1,21 @@
+{
+    "kind": "singleType",
+    "collectionName": "thums_up_benefits",
+    "info": {
+        "singularName": "thums-up-benefit",
+        "pluralName": "thums-up-benefits",
+        "displayName": "ThumsUpBenefitRight",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "BenefitList": {
+            "displayName": "benefitList",
+            "type": "component",
+            "repeatable": true,
+            "component": "benefit-list.benefit-list"
+        }
+    }
+}

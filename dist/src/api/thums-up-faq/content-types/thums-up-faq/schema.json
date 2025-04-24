@@ -1,0 +1,33 @@
+{
+    "kind": "singleType",
+    "collectionName": "thums_up_faqs",
+    "info": {
+        "singularName": "thums-up-faq",
+        "pluralName": "thums-up-faqs",
+        "displayName": "ThumsUpFaq",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "FAQList": {
+            "displayName": "FAQList",
+            "type": "component",
+            "repeatable": true,
+            "component": "sections.faq-list"
+        },
+        "title": {
+            "type": "string"
+        },
+        "text": {
+            "type": "string"
+        },
+        "contactMsg": {
+            "type": "string"
+        },
+        "contactHref": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "kind": "singleType",
+    "collectionName": "thums_up_testimonials",
+    "info": {
+        "singularName": "thums-up-testimonial",
+        "pluralName": "thums-up-testimonials",
+        "displayName": "ThumsUpTestimonial",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "subtitle": {
+            "type": "string"
+        },
+        "testimonialList": {
+            "displayName": "testimonialList",
+            "type": "component",
+            "repeatable": true,
+            "component": "sections.testimonial-list"
+        }
+    }
+}

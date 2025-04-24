@@ -1,0 +1,25 @@
+{
+    "collectionName": "components_fanta_section_intro_content_props",
+    "info": {
+        "displayName": "IntroContentProps",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "text": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string"
+        },
+        "button": {
+            "displayName": "button",
+            "type": "component",
+            "repeatable": true,
+            "component": "fanta-section-button.button"
+        }
+    }
+}

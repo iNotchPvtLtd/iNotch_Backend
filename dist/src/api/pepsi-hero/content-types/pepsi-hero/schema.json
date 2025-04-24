@@ -1,0 +1,35 @@
+{
+    "kind": "singleType",
+    "collectionName": "pepsi_heroes",
+    "info": {
+        "singularName": "pepsi-hero",
+        "pluralName": "pepsi-heroes",
+        "displayName": "PepsiHero"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "heading": {
+            "type": "string"
+        },
+        "cta": {
+            "type": "component",
+            "repeatable": false,
+            "component": "sections.cta"
+        },
+        "image": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": false
+        },
+        "text": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "collectionName": "components_layout_bottom_navs",
+    "info": {
+        "displayName": "Bottom Nav",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "logoLink": {
+            "type": "component",
+            "repeatable": false,
+            "component": "elements.logo-link"
+        },
+        "colOneLinks": {
+            "type": "component",
+            "repeatable": true,
+            "component": "elements.link"
+        },
+        "socialLinks": {
+            "displayName": "socialLinks",
+            "type": "component",
+            "repeatable": false,
+            "component": "elements.social-links"
+        },
+        "description": {
+            "type": "string"
+        }
+    }
+}

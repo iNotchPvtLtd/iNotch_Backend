@@ -1,0 +1,61 @@
+{
+    "kind": "singleType",
+    "collectionName": "thums_up_heroes",
+    "info": {
+        "singularName": "thums-up-hero",
+        "pluralName": "thums-up-heroes",
+        "displayName": "ThumsUpHero",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "badgeTitle": {
+            "type": "string"
+        },
+        "badgeText": {
+            "type": "string"
+        },
+        "h1Title": {
+            "type": "string"
+        },
+        "h1Span": {
+            "type": "string"
+        },
+        "h1Text": {
+            "type": "text"
+        },
+        "paragraph": {
+            "type": "text"
+        },
+        "button1": {
+            "type": "string"
+        },
+        "button2": {
+            "type": "string"
+        },
+        "imageHeroDark": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "imageHeroLight": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        }
+    }
+}

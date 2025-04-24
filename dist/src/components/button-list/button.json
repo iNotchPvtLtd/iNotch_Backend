@@ -1,0 +1,15 @@
+{
+    "collectionName": "components_button_list_buttons",
+    "info": {
+        "displayName": "button"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "color": {
+            "type": "string"
+        }
+    }
+}

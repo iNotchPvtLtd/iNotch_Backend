@@ -1,0 +1,13 @@
+{
+    "collectionName": "components_video_videos",
+    "info": {
+        "displayName": "Video",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "videoId": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "kind": "singleType",
+    "collectionName": "pepsi_benefits",
+    "info": {
+        "singularName": "pepsi-benefit",
+        "pluralName": "pepsi-benefits",
+        "displayName": "PepsiBenefit"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "heading": {
+            "type": "string"
+        },
+        "text": {
+            "type": "string"
+        },
+        "imageRight": {
+            "type": "boolean"
+        },
+        "image": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": false
+        },
+        "item": {
+            "type": "component",
+            "repeatable": true,
+            "component": "elements.item"
+        }
+    }
+}

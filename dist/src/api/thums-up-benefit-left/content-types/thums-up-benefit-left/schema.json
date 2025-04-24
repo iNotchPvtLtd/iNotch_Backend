@@ -1,0 +1,24 @@
+{
+    "kind": "singleType",
+    "collectionName": "thums_up_benefit_lefts",
+    "info": {
+        "singularName": "thums-up-benefit-left",
+        "pluralName": "thums-up-benefit-lefts",
+        "displayName": "ThumsUpBenefitLeft",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "h2": {
+            "type": "string"
+        },
+        "h2title": {
+            "type": "string"
+        },
+        "p": {
+            "type": "text"
+        }
+    }
+}
