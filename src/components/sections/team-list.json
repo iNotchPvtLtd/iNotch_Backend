@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_team_lists",
+  "info": {
+    "displayName": "teamList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "imageUrl": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "socialNetworks": {
+      "displayName": "socialNetwork",
+      "type": "component",
+      "repeatable": true,
+      "component": "sectionssn.social-network"
+    },
+    "positions": {
+      "type": "string"
+    }
+  }
+}

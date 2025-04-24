@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "sprite_sponsors",
+  "info": {
+    "singularName": "sprite-sponsor",
+    "pluralName": "sprite-sponsors",
+    "displayName": "SpriteSponsor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "SponsorList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.sponsor-list"
+    }
+  }
+}

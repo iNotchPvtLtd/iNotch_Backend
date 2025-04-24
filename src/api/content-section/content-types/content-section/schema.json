@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "content_sections",
+  "info": {
+    "singularName": "content-section",
+    "pluralName": "content-sections",
+    "displayName": "CocaColaContentSection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "imageRight": {
+      "type": "boolean",
+      "default": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

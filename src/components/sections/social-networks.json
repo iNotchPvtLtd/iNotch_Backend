@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_social_networks",
+  "info": {
+    "displayName": "SocialNetworks"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

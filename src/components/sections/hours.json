@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_hours",
+  "info": {
+    "displayName": "hours",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "operatingDays": {
+      "type": "string"
+    },
+    "operatingTime": {
+      "type": "string"
+    }
+  }
+}

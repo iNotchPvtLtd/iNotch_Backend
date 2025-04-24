@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "pepsi_ctas",
+  "info": {
+    "singularName": "pepsi-cta",
+    "pluralName": "pepsi-ctas",
+    "displayName": "PepsiCta",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.cta"
+    }
+  }
+}

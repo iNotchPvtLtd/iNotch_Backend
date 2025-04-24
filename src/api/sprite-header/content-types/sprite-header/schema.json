@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "sprite_headers",
+  "info": {
+    "singularName": "sprite-header",
+    "pluralName": "sprite-headers",
+    "displayName": "SpriteHeader",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sheetTitle": {
+      "type": "string"
+    },
+    "routeList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.route-list"
+    },
+    "featureList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.feature-list"
+    }
+  }
+}

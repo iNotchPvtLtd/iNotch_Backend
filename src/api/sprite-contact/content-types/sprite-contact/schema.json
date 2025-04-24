@@ -1,0 +1,59 @@
+{
+  "kind": "singleType",
+  "collectionName": "sprite_contacts",
+  "info": {
+    "singularName": "sprite-contact",
+    "pluralName": "sprite-contacts",
+    "displayName": "SpriteContact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "contactSubTitle": {
+      "type": "string"
+    },
+    "contactDescription": {
+      "type": "string"
+    },
+    "findUsTitle": {
+      "type": "string"
+    },
+    "callUsTitle": {
+      "type": "string"
+    },
+    "mailUsTitle": {
+      "type": "string"
+    },
+    "visitUsTitle": {
+      "type": "string"
+    },
+    "placeHolderFirstName": {
+      "type": "string"
+    },
+    "placeHolderLastName": {
+      "type": "string"
+    },
+    "placeHolderEmail": {
+      "type": "string"
+    },
+    "operatingDays": {
+      "type": "string"
+    },
+    "operatingTime": {
+      "type": "string"
+    },
+    "contactTitle": {
+      "type": "string"
+    }
+  }
+}

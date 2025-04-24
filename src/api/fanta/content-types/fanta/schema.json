@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "fantas",
+  "info": {
+    "singularName": "fanta",
+    "pluralName": "fantas",
+    "displayName": "fanta",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "mission": {
+      "displayName": "ContentData",
+      "type": "component",
+      "repeatable": false,
+      "component": "fanta-section.content-data"
+    },
+    "introContent": {
+      "displayName": "IntroContentProps",
+      "type": "component",
+      "repeatable": false,
+      "component": "fanta-section.intro-content-props"
+    },
+    "about": {
+      "displayName": "AboutContentProps",
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.about-content-props"
+    },
+    "middleBlock": {
+      "displayName": "MiddleContentProp",
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.middle-content-prop"
+    },
+    "product": {
+      "displayName": "product",
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.product"
+    },
+    "contact": {
+      "displayName": "contact",
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.contact"
+    },
+    "footer": {
+      "displayName": "footer",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.footer"
+    }
+  }
+}

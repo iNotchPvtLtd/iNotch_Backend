@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "sprite_benefit_lefts",
+  "info": {
+    "singularName": "sprite-benefit-left",
+    "pluralName": "sprite-benefit-lefts",
+    "displayName": "SpriteBenefitLeft"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "h2": {
+      "type": "string"
+    },
+    "h2title": {
+      "type": "string"
+    },
+    "p": {
+      "type": "string"
+    }
+  }
+}

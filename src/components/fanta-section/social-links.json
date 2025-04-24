@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_fanta_section_social_links",
+  "info": {
+    "displayName": "socialLinks"
+  },
+  "options": {},
+  "attributes": {
+    "href": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

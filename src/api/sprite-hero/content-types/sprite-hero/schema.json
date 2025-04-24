@@ -1,0 +1,61 @@
+{
+  "kind": "singleType",
+  "collectionName": "sprite_heroes",
+  "info": {
+    "singularName": "sprite-hero",
+    "pluralName": "sprite-heroes",
+    "displayName": "SpriteHero",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "badgeTitle": {
+      "type": "string"
+    },
+    "badgeText": {
+      "type": "string"
+    },
+    "h1Title": {
+      "type": "string"
+    },
+    "h1Span": {
+      "type": "string"
+    },
+    "h1Text": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "button1": {
+      "type": "string"
+    },
+    "button2": {
+      "type": "string"
+    },
+    "imageHeroLight": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageHeroDark": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

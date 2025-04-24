@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_fanta_section_language_switches",
+  "info": {
+    "displayName": "languageSwitch"
+  },
+  "options": {},
+  "attributes": {
+    "icon1": {
+      "type": "string"
+    },
+    "icon2": {
+      "type": "string"
+    },
+    "footericon": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "thums_up_sponsors",
+  "info": {
+    "singularName": "thums-up-sponsor",
+    "pluralName": "thums-up-sponsors",
+    "displayName": "ThumsUpSponsor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "SponsorList": {
+      "displayName": "SponsorList",
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.sponsor-list"
+    }
+  }
+}

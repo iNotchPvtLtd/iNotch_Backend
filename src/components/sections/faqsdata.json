@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_faqsdata",
+  "info": {
+    "displayName": "faqsdata",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "string"
+    }
+  }
+}

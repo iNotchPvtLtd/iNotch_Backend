@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_testimonial_lists",
+  "info": {
+    "displayName": "testimonialList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "userName": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_fanta_section_links",
+  "info": {
+    "displayName": "links"
+  },
+  "options": {},
+  "attributes": {
+    "links": {
+      "type": "string"
+    }
+  }
+}

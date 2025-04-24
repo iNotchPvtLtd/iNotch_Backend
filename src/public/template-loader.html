@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GrapesJS Template Loader</title>
+  <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"/>
+  <style>
+    body, html {
+      margin: 0;
+      height: 100%;
+    }
+    #gjs {
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+<div id="gjs"></div>
+
+<script src="https://unpkg.com/grapesjs"></script>
+<script>
+  async function loadTemplateFromS3(editor, url) {
+    if (!editor || typeof editor.setComponents !== 'function') {
+      console.error('Editor instance is not ready or invalid');
+      return;
+    }
+
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+      const html = await response.text();
+
+      // Create a temporary div to parse HTML content
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = html;
+
+      // Extract CSS from <style> tags
+      const styles = Array.from(tempDiv.querySelectorAll('style'))
+        .map(styleTag => styleTag.innerHTML)
+        .join('\n');
+
+      // Remove <style> tags so they don't get duplicated in components
+      tempDiv.querySelectorAll('style').forEach(tag => tag.remove());
+
+      const cleanHTML = tempDiv.innerHTML;
+
+      // Load into GrapesJS
+      editor.setComponents(cleanHTML);
+      editor.setStyle(styles);
+
+      console.log('Template loaded successfully!');
+    } catch (err) {
+      console.error('Error loading template:', err);
+    }
+  }
+
+  // Initialize GrapesJS
+  const editor = grapesjs.init({
+    container: '#gjs',
+    fromElement: false,
+    height: '100%',
+    width: 'auto',
+    storageManager: false, // Disable local storage
+  });
+
+  // When the editor is ready, load the template
+  editor.on('load', () => {
+    console.log('GrapesJS is ready');
+
+    const templateUrl = 'https://imakesite.s3.eu-north-1.amazonaws.com/templates/coke/index.html';
+    loadTemplateFromS3(editor, templateUrl);
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_fanta_section_content_data",
+  "info": {
+    "displayName": "ContentData"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

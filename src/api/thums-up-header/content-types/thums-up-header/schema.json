@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "thums_up_headers",
+  "info": {
+    "singularName": "thums-up-header",
+    "pluralName": "thums-up-headers",
+    "displayName": "ThumsUpHeader",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sheetTitle": {
+      "type": "string"
+    },
+    "routeList": {
+      "displayName": "routeList",
+      "type": "component",
+      "repeatable": true,
+      "component": "header.route-list"
+    },
+    "featureList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.feature-list"
+    }
+  }
+}

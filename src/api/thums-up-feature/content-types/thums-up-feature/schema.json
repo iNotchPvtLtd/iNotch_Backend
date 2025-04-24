@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "thums_up_features",
+  "info": {
+    "singularName": "thums-up-feature",
+    "pluralName": "thums-up-features",
+    "displayName": "ThumsUpFeature"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "FeatureList": {
+      "displayName": "FeatureList",
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.feature-list"
+    }
+  }
+}

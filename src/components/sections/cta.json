@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_ctas",
+  "info": {
+    "displayName": "cta"
+  },
+  "options": {},
+  "attributes": {
+    "href": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "external": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
