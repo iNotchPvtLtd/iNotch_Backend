@@ -27,24 +27,14 @@ exports.default = ({ env }) => {
             },
             pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
         },
-        connection: {
-            host: env('DATABASE_HOST', 'your-db-host'),
-            port: env.int('DATABASE_PORT', 5432),
-            database: env('DATABASE_NAME', 'your-db-name'),
-            user: env('DATABASE_USERNAME', 'your-db-user'),
-            password: env('DATABASE_PASSWORD', 'your-db-password'),
-            ssl: {
-                rejectUnauthorized: false, // set this to true if you have a valid cert
-            },
-        },
         postgres: {
             connection: {
-                connectionString: env('DATABASE_URL'),
+                connectionString: env('DATABASE_URL', 'postgresql://imakesite_user:x7YrocwdTJXLPdxP464gFAGisIdUxsIo@dpg-d05ksd6uk2gs73ciit5g-a.oregon-postgres.render.com/imakesite'),
                 host: env('DATABASE_HOST', 'dpg-d0519695pdvs73ahnfv0-a.oregon-postgres.render.com'),
                 port: env.int('DATABASE_PORT', 5432),
-                database: env('DATABASE_NAME', 'strapi_db_21mi'),
-                user: env('DATABASE_USERNAME', 'strapi_db_21mi_user'),
-                password: env('DATABASE_PASSWORD', 'mFzmaCx2KBDsdM0yfNkOtBJGkJbaJbql'),
+                database: env('DATABASE_NAME', 'imakesite'),
+                user: env('DATABASE_USERNAME', 'imakesite_user'),
+                password: env('DATABASE_PASSWORD'),
                 ssl: {
                     rejectUnauthorized: false
                 },
