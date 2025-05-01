@@ -1438,6 +1438,31 @@ export interface ApiSpriteTestimonialSpriteTestimonial
   };
 }
 
+export interface ApiTeslaTesla extends Struct.SingleTypeSchema {
+  collectionName: 'teslas';
+  info: {
+    displayName: 'tesla';
+    pluralName: 'teslas';
+    singularName: 'tesla';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    data: Schema.Attribute.JSON;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::tesla.tesla'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiTestimonialTestimonial extends Struct.SingleTypeSchema {
   collectionName: 'testimonials';
   info: {
@@ -2444,6 +2469,7 @@ declare module '@strapi/strapi' {
       'api::sprite-sponsor.sprite-sponsor': ApiSpriteSponsorSpriteSponsor;
       'api::sprite-team.sprite-team': ApiSpriteTeamSpriteTeam;
       'api::sprite-testimonial.sprite-testimonial': ApiSpriteTestimonialSpriteTestimonial;
+      'api::tesla.tesla': ApiTeslaTesla;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'api::thums-up-benefit-left.thums-up-benefit-left': ApiThumsUpBenefitLeftThumsUpBenefitLeft;
       'api::thums-up-benefit.thums-up-benefit': ApiThumsUpBenefitThumsUpBenefit;

@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "teslas",
+  "info": {
+    "singularName": "tesla",
+    "pluralName": "teslas",
+    "displayName": "tesla"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "data": {
+      "type": "json"
+    }
+  }
+}

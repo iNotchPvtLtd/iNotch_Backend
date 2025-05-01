@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "0.1.0",
   "private": true,
-  "description": "A MakeMyWebSite application",
+  "description": "A iMakeSite application",
   "scripts": {
     "build": "strapi build",
     "console": "strapi console",
