@@ -21,7 +21,7 @@ export default {
 
         "app.components.LeftMenu.navbrand.workplace" : "Testing",
 
-        "Auth.form.welcome.title" : "Login to MakeMyWebSite",
+        "Auth.form.welcome.title" : "Login to iMakeSite",
 
         "Auth.form.welcome.subtitle" : "Login to your account",
 

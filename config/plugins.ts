@@ -1,3 +1,4 @@
+
 export default ({ env }) => ({
   upload: {
     config: {
@@ -5,12 +6,12 @@ export default ({ env }) => ({
       providerOptions: {
         s3Options: {
           credentials: {
-            accessKeyId: env('AWS_ACCESS_KEY_ID'),
-            secretAccessKey: env('AWS_ACCESS_SECRET')
+            accessKeyId: 'AKIAWXBQBGVR54M6HMNV',
+            secretAccessKey: '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'
           },
-          region: env('AWS_REGION'),
+          region: 'eu-north-1',
           params: {
-            Bucket: env('AWS_BUCKET_NAME')
+            Bucket: 'imakesite'
           }
         }
       },
