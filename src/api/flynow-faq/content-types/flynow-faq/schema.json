@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "flynow_faqs",
+  "info": {
+    "singularName": "flynow-faq",
+    "pluralName": "flynow-faqs",
+    "displayName": "FlynowFaq"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "questions": {
+      "displayName": "questions",
+      "type": "component",
+      "repeatable": false,
+      "component": "flynow.questions"
+    }
+  }
+}

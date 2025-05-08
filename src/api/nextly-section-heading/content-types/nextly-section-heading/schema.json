@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "nextly_section_headings",
+  "info": {
+    "singularName": "nextly-section-heading",
+    "pluralName": "nextly-section-headings",
+    "displayName": "NextlySectionHeading"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "preHeading": {
+      "type": "text"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

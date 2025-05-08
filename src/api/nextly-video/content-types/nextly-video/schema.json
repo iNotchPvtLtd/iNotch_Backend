@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "nextly_videos",
+  "info": {
+    "singularName": "nextly-video",
+    "pluralName": "nextly-videos",
+    "displayName": "NextlyVideo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "videoId": {
+      "type": "string"
+    }
+  }
+}

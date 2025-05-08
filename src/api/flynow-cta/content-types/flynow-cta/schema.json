@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "flynow_ctas",
+  "info": {
+    "singularName": "flynow-cta",
+    "pluralName": "flynow-ctas",
+    "displayName": "FlynowCta"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "subHeading": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    }
+  }
+}

@@ -193,6 +193,52 @@ export interface FantaSectionSocialLinks extends Struct.ComponentSchema {
   };
 }
 
+export interface FlynowData extends Struct.ComponentSchema {
+  collectionName: 'components_flynow_data';
+  info: {
+    displayName: 'data';
+  };
+  attributes: {
+    answer: Schema.Attribute.Text;
+    question: Schema.Attribute.Text;
+  };
+}
+
+export interface FlynowFooter extends Struct.ComponentSchema {
+  collectionName: 'components_flynow_footers';
+  info: {
+    displayName: 'footer';
+  };
+  attributes: {
+    colOneLinks: Schema.Attribute.Component<'elements.item', true>;
+    description: Schema.Attribute.Text;
+    logoLink: Schema.Attribute.Component<'elements.logo-link', true>;
+    socialLinks: Schema.Attribute.Component<'elements.social-links', false>;
+  };
+}
+
+export interface FlynowItem extends Struct.ComponentSchema {
+  collectionName: 'components_flynow_items';
+  info: {
+    displayName: 'item';
+  };
+  attributes: {
+    heading: Schema.Attribute.String;
+    icon: Schema.Attribute.String;
+    text: Schema.Attribute.String;
+  };
+}
+
+export interface FlynowQuestions extends Struct.ComponentSchema {
+  collectionName: 'components_flynow_questions';
+  info: {
+    displayName: 'questions';
+  };
+  attributes: {
+    data: Schema.Attribute.Component<'flynow.data', true>;
+  };
+}
+
 export interface HeaderFeatureList extends Struct.ComponentSchema {
   collectionName: 'components_header_feature_lists';
   info: {
@@ -562,6 +608,10 @@ declare module '@strapi/strapi' {
       'fanta-section.links': FantaSectionLinks;
       'fanta-section.policy': FantaSectionPolicy;
       'fanta-section.social-links': FantaSectionSocialLinks;
+      'flynow.data': FlynowData;
+      'flynow.footer': FlynowFooter;
+      'flynow.item': FlynowItem;
+      'flynow.questions': FlynowQuestions;
       'header.feature-list': HeaderFeatureList;
       'header.route-list': HeaderRouteList;
       'layout.bottom-nav': LayoutBottomNav;

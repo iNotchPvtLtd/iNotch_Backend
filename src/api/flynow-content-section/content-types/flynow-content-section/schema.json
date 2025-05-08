@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "flynow_content_sections",
+  "info": {
+    "singularName": "flynow-content-section",
+    "pluralName": "flynow-content-sections",
+    "displayName": "FlynowContentSection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "imageRight": {
+      "type": "boolean",
+      "default": false
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

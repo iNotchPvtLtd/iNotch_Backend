@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_flynow_footers",
+  "info": {
+    "displayName": "footer"
+  },
+  "options": {},
+  "attributes": {
+    "logoLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.logo-link"
+    },
+    "colOneLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.item"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.social-links"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -620,6 +620,275 @@ export interface ApiFaqFaq extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiFlynowBenefitFlynowBenefit extends Struct.SingleTypeSchema {
+  collectionName: 'flynow_benefits';
+  info: {
+    displayName: 'FlynowBenefit';
+    pluralName: 'flynow-benefits';
+    singularName: 'flynow-benefit';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    imageRight: Schema.Attribute.Boolean;
+    item: Schema.Attribute.Component<'flynow.item', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::flynow-benefit.flynow-benefit'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    text: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFlynowContentSectionFlynowContentSection
+  extends Struct.SingleTypeSchema {
+  collectionName: 'flynow_content_sections';
+  info: {
+    displayName: 'FlynowContentSection';
+    pluralName: 'flynow-content-sections';
+    singularName: 'flynow-content-section';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    imageRight: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::flynow-content-section.flynow-content-section'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    text: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFlynowFaqFlynowFaq extends Struct.SingleTypeSchema {
+  collectionName: 'flynow_faqs';
+  info: {
+    displayName: 'FlynowFaq';
+    pluralName: 'flynow-faqs';
+    singularName: 'flynow-faq';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::flynow-faq.flynow-faq'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    questions: Schema.Attribute.Component<'flynow.questions', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFlynowFooterFlynowFooter extends Struct.SingleTypeSchema {
+  collectionName: 'flynow_footers';
+  info: {
+    displayName: 'FlynowFooter';
+    pluralName: 'flynow-footers';
+    singularName: 'flynow-footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    footer: Schema.Attribute.Component<'flynow.footer', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::flynow-footer.flynow-footer'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFlynowHeaderFlynowHeader extends Struct.SingleTypeSchema {
+  collectionName: 'flynow_headers';
+  info: {
+    displayName: 'FlynowHeader';
+    pluralName: 'flynow-headers';
+    singularName: 'flynow-header';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::flynow-header.flynow-header'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    topnav: Schema.Attribute.Component<'layout.top-nav', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFlynowHeroFlynowHero extends Struct.SingleTypeSchema {
+  collectionName: 'flynow_heroes';
+  info: {
+    displayName: 'FlynowHero';
+    pluralName: 'flynow-heroes';
+    singularName: 'flynow-hero';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    cta: Schema.Attribute.Component<'elements.link', false>;
+    heading: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::flynow-hero.flynow-hero'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    text: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFlynowSectionHeadingFlynowSectionHeading
+  extends Struct.SingleTypeSchema {
+  collectionName: 'flynow_section_headings';
+  info: {
+    displayName: 'FlynowSectionHeading';
+    pluralName: 'flynow-section-headings';
+    singularName: 'flynow-section-heading';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::flynow-section-heading.flynow-section-heading'
+    > &
+      Schema.Attribute.Private;
+    preHeading: Schema.Attribute.Text;
+    publishedAt: Schema.Attribute.DateTime;
+    text: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFlynowTestimonialFlynowTestimonial
+  extends Struct.SingleTypeSchema {
+  collectionName: 'flynow_testimonials';
+  info: {
+    displayName: 'FlynowTestimonial';
+    pluralName: 'flynow-testimonials';
+    singularName: 'flynow-testimonial';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    card: Schema.Attribute.Component<'sections.card', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::flynow-testimonial.flynow-testimonial'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFlynowVideoFlynowVideo extends Struct.SingleTypeSchema {
+  collectionName: 'flynow_videos';
+  info: {
+    displayName: 'FlynowVideo';
+    pluralName: 'flynow-videos';
+    singularName: 'flynow-video';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::flynow-video.flynow-video'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    videoId: Schema.Attribute.String;
+  };
+}
+
 export interface ApiFooterFooter extends Struct.SingleTypeSchema {
   collectionName: 'footers';
   info: {
@@ -706,6 +975,305 @@ export interface ApiHeroHero extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiNextlyBenefitNextlyBenefit extends Struct.SingleTypeSchema {
+  collectionName: 'nextly_benefits';
+  info: {
+    displayName: 'NextlyBenefit';
+    pluralName: 'nextly-benefits';
+    singularName: 'nextly-benefit';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    imageRight: Schema.Attribute.Boolean;
+    item: Schema.Attribute.Component<'elements.item', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::nextly-benefit.nextly-benefit'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    text: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiNextlyContentSectionNextlyContentSection
+  extends Struct.SingleTypeSchema {
+  collectionName: 'nextly_content_sections';
+  info: {
+    displayName: 'NextlyContentSection';
+    pluralName: 'nextly-content-sections';
+    singularName: 'nextly-content-section';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    imageRight: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::nextly-content-section.nextly-content-section'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    text: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiNextlyCtaNextlyCta extends Struct.SingleTypeSchema {
+  collectionName: 'nextly_ctas';
+  info: {
+    displayName: 'NextlyCta';
+    pluralName: 'nextly-ctas';
+    singularName: 'nextly-cta';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    cta: Schema.Attribute.Component<'elements.link', false>;
+    heading: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::nextly-cta.nextly-cta'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    subHeading: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiNextlyFaqNextlyFaq extends Struct.SingleTypeSchema {
+  collectionName: 'nextly_faqs';
+  info: {
+    displayName: 'NextlyFaq';
+    pluralName: 'nextly-faqs';
+    singularName: 'nextly-faq';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::nextly-faq.nextly-faq'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    questions: Schema.Attribute.Component<'sections.questions', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiNextlyFooterNextlyFooter extends Struct.SingleTypeSchema {
+  collectionName: 'nextly_footers';
+  info: {
+    displayName: 'NextlyFooter';
+    pluralName: 'nextly-footers';
+    singularName: 'nextly-footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    footer: Schema.Attribute.Component<'layout.bottom-nav', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::nextly-footer.nextly-footer'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiNextlyHeaderNextlyHeader extends Struct.SingleTypeSchema {
+  collectionName: 'nextly_headers';
+  info: {
+    displayName: 'NextlyHeader';
+    pluralName: 'nextly-headers';
+    singularName: 'nextly-header';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::nextly-header.nextly-header'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    topnav: Schema.Attribute.Component<'layout.top-nav', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiNextlyHeroNextlyHero extends Struct.SingleTypeSchema {
+  collectionName: 'nextly_heroes';
+  info: {
+    displayName: 'NextlyHero';
+    pluralName: 'nextly-heroes';
+    singularName: 'nextly-hero';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    cta: Schema.Attribute.Component<'sections.cta', false>;
+    heading: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::nextly-hero.nextly-hero'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    text: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiNextlySectionHeadingNextlySectionHeading
+  extends Struct.SingleTypeSchema {
+  collectionName: 'nextly_section_headings';
+  info: {
+    displayName: 'NextlySectionHeading';
+    pluralName: 'nextly-section-headings';
+    singularName: 'nextly-section-heading';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::nextly-section-heading.nextly-section-heading'
+    > &
+      Schema.Attribute.Private;
+    preHeading: Schema.Attribute.Text;
+    publishedAt: Schema.Attribute.DateTime;
+    text: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiNextlyTestimonialNextlyTestimonial
+  extends Struct.SingleTypeSchema {
+  collectionName: 'nextly_testimonials';
+  info: {
+    displayName: 'NextlyTestimonial';
+    pluralName: 'nextly-testimonials';
+    singularName: 'nextly-testimonial';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    card: Schema.Attribute.Component<'sections.card', true>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::nextly-testimonial.nextly-testimonial'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiNextlyVideoNextlyVideo extends Struct.SingleTypeSchema {
+  collectionName: 'nextly_videos';
+  info: {
+    displayName: 'NextlyVideo';
+    pluralName: 'nextly-videos';
+    singularName: 'nextly-video';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::nextly-video.nextly-video'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    videoId: Schema.Attribute.String;
   };
 }
 
@@ -2443,9 +3011,28 @@ declare module '@strapi/strapi' {
       'api::cta.cta': ApiCtaCta;
       'api::fanta.fanta': ApiFantaFanta;
       'api::faq.faq': ApiFaqFaq;
+      'api::flynow-benefit.flynow-benefit': ApiFlynowBenefitFlynowBenefit;
+      'api::flynow-content-section.flynow-content-section': ApiFlynowContentSectionFlynowContentSection;
+      'api::flynow-faq.flynow-faq': ApiFlynowFaqFlynowFaq;
+      'api::flynow-footer.flynow-footer': ApiFlynowFooterFlynowFooter;
+      'api::flynow-header.flynow-header': ApiFlynowHeaderFlynowHeader;
+      'api::flynow-hero.flynow-hero': ApiFlynowHeroFlynowHero;
+      'api::flynow-section-heading.flynow-section-heading': ApiFlynowSectionHeadingFlynowSectionHeading;
+      'api::flynow-testimonial.flynow-testimonial': ApiFlynowTestimonialFlynowTestimonial;
+      'api::flynow-video.flynow-video': ApiFlynowVideoFlynowVideo;
       'api::footer.footer': ApiFooterFooter;
       'api::global.global': ApiGlobalGlobal;
       'api::hero.hero': ApiHeroHero;
+      'api::nextly-benefit.nextly-benefit': ApiNextlyBenefitNextlyBenefit;
+      'api::nextly-content-section.nextly-content-section': ApiNextlyContentSectionNextlyContentSection;
+      'api::nextly-cta.nextly-cta': ApiNextlyCtaNextlyCta;
+      'api::nextly-faq.nextly-faq': ApiNextlyFaqNextlyFaq;
+      'api::nextly-footer.nextly-footer': ApiNextlyFooterNextlyFooter;
+      'api::nextly-header.nextly-header': ApiNextlyHeaderNextlyHeader;
+      'api::nextly-hero.nextly-hero': ApiNextlyHeroNextlyHero;
+      'api::nextly-section-heading.nextly-section-heading': ApiNextlySectionHeadingNextlySectionHeading;
+      'api::nextly-testimonial.nextly-testimonial': ApiNextlyTestimonialNextlyTestimonial;
+      'api::nextly-video.nextly-video': ApiNextlyVideoNextlyVideo;
       'api::pepsi-benefit.pepsi-benefit': ApiPepsiBenefitPepsiBenefit;
       'api::pepsi-content-section.pepsi-content-section': ApiPepsiContentSectionPepsiContentSection;
       'api::pepsi-cta.pepsi-cta': ApiPepsiCtaPepsiCta;

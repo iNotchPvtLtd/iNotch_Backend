@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "nextly_benefits",
+  "info": {
+    "singularName": "nextly-benefit",
+    "pluralName": "nextly-benefits",
+    "displayName": "NextlyBenefit"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "text": {
+      "type": "text"
+    },
+    "imageRight": {
+      "type": "boolean"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.item"
+    }
+  }
+}

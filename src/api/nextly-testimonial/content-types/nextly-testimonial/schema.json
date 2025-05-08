@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "nextly_testimonials",
+  "info": {
+    "singularName": "nextly-testimonial",
+    "pluralName": "nextly-testimonials",
+    "displayName": "NextlyTestimonial"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.card"
+    }
+  }
+}

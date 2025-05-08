@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "nextly_heroes",
+  "info": {
+    "singularName": "nextly-hero",
+    "pluralName": "nextly-heroes",
+    "displayName": "NextlyHero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.cta"
+    },
+    "text": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

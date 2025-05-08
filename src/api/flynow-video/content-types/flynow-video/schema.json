@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "flynow_videos",
+  "info": {
+    "singularName": "flynow-video",
+    "pluralName": "flynow-videos",
+    "displayName": "FlynowVideo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "videoId": {
+      "type": "string"
+    }
+  }
+}

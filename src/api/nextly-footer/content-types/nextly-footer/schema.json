@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "nextly_footers",
+  "info": {
+    "singularName": "nextly-footer",
+    "pluralName": "nextly-footers",
+    "displayName": "NextlyFooter"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.bottom-nav"
+    }
+  }
+}

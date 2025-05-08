@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "flynow_benefits",
+  "info": {
+    "singularName": "flynow-benefit",
+    "pluralName": "flynow-benefits",
+    "displayName": "FlynowBenefit"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "imageRight": {
+      "type": "boolean"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "item": {
+      "displayName": "item",
+      "type": "component",
+      "repeatable": true,
+      "component": "flynow.item"
+    }
+  }
+}

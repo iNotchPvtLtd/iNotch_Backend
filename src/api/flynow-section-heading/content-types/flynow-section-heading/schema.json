@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "flynow_section_headings",
+  "info": {
+    "singularName": "flynow-section-heading",
+    "pluralName": "flynow-section-headings",
+    "displayName": "FlynowSectionHeading"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "preHeading": {
+      "type": "text"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

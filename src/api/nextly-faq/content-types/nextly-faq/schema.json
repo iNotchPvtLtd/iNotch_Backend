@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "nextly_faqs",
+  "info": {
+    "singularName": "nextly-faq",
+    "pluralName": "nextly-faqs",
+    "displayName": "NextlyFaq"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "questions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.questions"
+    }
+  }
+}

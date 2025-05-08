@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "flynow_testimonials",
+  "info": {
+    "singularName": "flynow-testimonial",
+    "pluralName": "flynow-testimonials",
+    "displayName": "FlynowTestimonial"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.card"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "flynow_headers",
+  "info": {
+    "singularName": "flynow-header",
+    "pluralName": "flynow-headers",
+    "displayName": "FlynowHeader"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "topnav": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.top-nav"
+    }
+  }
+}
