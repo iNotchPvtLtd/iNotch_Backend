@@ -684,6 +684,36 @@ export interface ApiFlynowContentSectionFlynowContentSection
   };
 }
 
+export interface ApiFlynowCtaFlynowCta extends Struct.SingleTypeSchema {
+  collectionName: 'flynow_ctas';
+  info: {
+    displayName: 'FlynowCta';
+    pluralName: 'flynow-ctas';
+    singularName: 'flynow-cta';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    cta: Schema.Attribute.Component<'elements.link', false>;
+    heading: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::flynow-cta.flynow-cta'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    subHeading: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiFlynowFaqFlynowFaq extends Struct.SingleTypeSchema {
   collectionName: 'flynow_faqs';
   info: {
@@ -3013,6 +3043,7 @@ declare module '@strapi/strapi' {
       'api::faq.faq': ApiFaqFaq;
       'api::flynow-benefit.flynow-benefit': ApiFlynowBenefitFlynowBenefit;
       'api::flynow-content-section.flynow-content-section': ApiFlynowContentSectionFlynowContentSection;
+      'api::flynow-cta.flynow-cta': ApiFlynowCtaFlynowCta;
       'api::flynow-faq.flynow-faq': ApiFlynowFaqFlynowFaq;
       'api::flynow-footer.flynow-footer': ApiFlynowFooterFlynowFooter;
       'api::flynow-header.flynow-header': ApiFlynowHeaderFlynowHeader;
