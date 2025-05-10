@@ -9,7 +9,7 @@ export default function registerLifecycles() {
     models: ['api::tesla.tesla'],
 
     async afterCreate(event) {
-      console.log('✅ afterCreate triggered', event);
+      console.log('✅ afterCreate triggered');
     },
 
     async afterUpdate(event) {
@@ -18,7 +18,7 @@ export default function registerLifecycles() {
     },
 
     async afterDelete(event) {
-      console.log('✅ afterDelete triggered', event);
+      console.log('✅ afterDelete triggered');
     },
   });
 }

@@ -26,14 +26,14 @@ export default ({ env }) => {
       pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
     },
 
-
+    
     postgres: {
       connection: {
-        connectionString: env('DATABASE_URL','postgresql://imakesite_user:x7YrocwdTJXLPdxP464gFAGisIdUxsIo@dpg-d05ksd6uk2gs73ciit5g-a.oregon-postgres.render.com/imakesite'),
-        host: env('DATABASE_HOST','dpg-d0519695pdvs73ahnfv0-a.oregon-postgres.render.com'),
+        connectionString: env('DATABASE_URL','postgresql://postgres:imakesite@database-1.czq6umq4u2dy.eu-north-1.rds.amazonaws.com/postgres'),
+        host: env('DATABASE_HOST','database-1.czq6umq4u2dy.eu-north-1.rds.amazonaws.com'),
         port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME','imakesite'),
-        user: env('DATABASE_USERNAME','imakesite_user'),
+        database: env('DATABASE_NAME','postgresql'),
+        user: env('DATABASE_USERNAME','postgresql'),
         password: env('DATABASE_PASSWORD'),
         ssl: {
           rejectUnauthorized: false
@@ -42,6 +42,24 @@ export default ({ env }) => {
       },
       pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
     },
+
+    // postgres: {
+    //   connection: {
+    //     connectionString: env('DATABASE_URL','postgresql://imakesite_user:x7YrocwdTJXLPdxP464gFAGisIdUxsIo@dpg-d05ksd6uk2gs73ciit5g-a.oregon-postgres.render.com/imakesite'),
+    //     host: env('DATABASE_HOST','dpg-d0519695pdvs73ahnfv0-a.oregon-postgres.render.com'),
+    //     port: env.int('DATABASE_PORT', 5432),
+    //     database: env('DATABASE_NAME','imakesite'),
+    //     user: env('DATABASE_USERNAME','imakesite_user'),
+    //     password: env('DATABASE_PASSWORD'),
+    //     ssl: {
+    //       rejectUnauthorized: false
+    //     },
+    //     schema: env('DATABASE_SCHEMA', 'public'),
+    //   },
+    //   pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
+    // },
+
+
     sqlite: {
       connection: {
         filename: path.join(__dirname, '..', '..', env('DATABASE_FILENAME', '.tmp/data.db')),
